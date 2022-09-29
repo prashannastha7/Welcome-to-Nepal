@@ -1,0 +1,167 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+     height:100vh;
+	background-image: url('../image/web.jpg');
+    background-size: 100% 100%
+
+}
+
+nav{
+	font-size: 20px;
+	padding: 15px;
+	width: 100%
+	height 100vh;
+	background:rgba(0,0,0,0.4);
+	color: orange;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.logo{
+
+	width: 20%; text-align: center;
+	font-family: Colonna MT;
+	
+}
+
+.menu{
+	width: 38%;
+	justify-content: space-between;
+	display: flex;
+
+
+	}
+.menu a{
+
+	color: white; text-decoration: none;
+	font-weight: bold; width: 25%;
+	font-family: Brush script MT;
+
+}
+
+.menu a: first_child{
+	color: #00b894;
+} 
+
+main{
+	width: 100%; height: 85vh;
+	display: flex;
+	justify-content: center; align-items: center;
+}
+
+section{
+	padding-top: 40px;
+
+
+}
+section h3{
+	font-size:45px;
+	font-weight: 200;
+	letter-spacing: 3px;
+	text-shadow:  1px 2px 2px black;
+	text-align: center;
+	background-color: rgba(241, 191, 129,0.4);
+	transition-property: inherit;
+	transition-duration: 2s; 
+}
+
+section h1{
+	margin: 30px 0 20px 0;
+	font-size: 35px;
+	font-weight: 700;
+	text-shadow: 2px 2px white;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+section p{
+	word-spacing: 2px;
+	margin-bottom: 25px;
+	text-shadow: 1px 1px 1px black;
+	margin-top: 50; margin-left: 50;
+	padding-bottom: 50;
+	text-align: center;
+	font-size: 25px;
+	background-color: rgba(158, 96, 94,0.9);
+
+
+
+}
+section a{
+	padding: 10px 25px;
+	border-radius: 50px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+	transition: all .5s ease;	
+    
+}
+
+
+.btnone{
+	background: white;
+	color: black;
+	margin-left: 50px;
+	
+}
+
+.btnone:hover{
+	background:#00b894;
+	text-decoration: underline;
+}
+
+.btntwo{
+	background: #00b894;
+	color: black;
+   
+}
+.btntwo:hover{
+background:white;
+text-decoration: underline;
+  }
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color:purple;
+	text-transform: uppercase;
+	}
+
+	@keyframes changetext{
+		0% {content: "Pokhara" }
+		20% {content: "Kathmandu" }
+		35% {content: "Chitwan" }
+		60% {content: "Lumbini" }
+		80% {content: "Illam" }
+		100% {content: "Mustang" }
+	}
+
+	.menu a:first-child:hover{
+		background:orange;
+		border-radius: 20px;
+		text-decoration: underline;
+	}
+	.menu a:last-child:hover{
+		background:orange;
+		border-radius: 10px;
+	}
+
+	.menu a:hover{
+		background:green;
+	}
+
+
+
+
+
+
