@@ -1,0 +1,125 @@
+main {
+    margin: 5rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.form-wrapper {
+    border: 2px solid rgba(0, 0, 0, 0.304);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    margin: 0 auto;
+    max-width: 30%;
+    padding: 2rem 3rem;
+}
+
+.form-wrapper>p {
+    margin-bottom: 1.5rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label p {
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 0.5px solid rgba(0, 0, 0, 0.559);
+    width: 100%;
+}
+
+input[type=radio] {
+    width: initial;
+    margin: 0.2rem;
+}
+
+.foot-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+@media only screen and (max-width:1650px) {
+    .form-wrapper {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .form-wrapper {
+        min-width: 50%;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .form-wrapper {
+        min-width: 70%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .form-wrapper {
+        min-width: 80%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    main h1 {
+        font-size: 2.6rem;
+    }
+
+    .form-wrapper {
+        min-width: 90%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    main {
+        margin: 3rem 2rem;
+    }
+
+    .form-wrapper {
+        padding: 2rem 1.5rem;
+        min-width: 100%;
+    }
+
+    main h1 {
+        font-size: 2.3rem;
+    }
+
+    label p {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+    }
+
+    input,
+    select {
+        padding: 0.2rem 0.5rem;
+        border-radius: 6px;
+        border: 0.4px solid rgba(0, 0, 0, 0.56);
+        width: 100%;
+    }
+
+    .foot-buttons {
+        justify-content: space-evenly;
+    }
+
+    .footer-buttons {
+        padding: 0.5rem;
+    }
+}
